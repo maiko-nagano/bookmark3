@@ -10,10 +10,10 @@ function h($str)
 //※ DBname等、今回の授業に合わせる。
 function db_conn(){
     try {
-        $db_name = 'gokiko_gsmil2'; //データベース名
-        $db_id = 'gokiko'; //アカウント名
-        $db_pw = 'gEHLqyvs-3_v'; //パスワード：MAMPは‘root’
-        $db_host = 'mysql654.db.sakura.ne.jp'; //DBホスト
+        $db_name = 'gs_db_class'; //データベース名
+        $db_id = 'root'; //アカウント名
+        $db_pw = ''; //パスワード：MAMPは‘root’
+        $db_host = 'localhost'; //DBホスト
         $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
         return $pdo;
     } catch (PDOException $e) {
